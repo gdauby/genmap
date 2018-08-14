@@ -1,0 +1,15 @@
+Package: genmap
+Type: Package
+Title: Mapping genetic differentiation for multiple taxa
+Version: 0.1.0
+Author: Gilles Dauby
+Maintainer: Gilles Dauby <gildauby@gmail.com>
+Description: Differents functions used for spatial partitionning samples (individuals) of multiple taxa for comparing their genetic diversity patterns.
+Depends:
+    R (>= 3.1)
+License: GPL-2
+Imports: tidyverse, raster, sf
+Encoding: UTF-8
+LazyData: true
+Suggests: testthat
+RoxygenNote: 6.1.0
