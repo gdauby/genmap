@@ -6,4 +6,38 @@ output: html_document
 ---
 
 
+This package is under construction and (will) contain functions for partitionning in space occurrences datasets for multiple taxa in order to compare their genetic patterns for example.
+
+
+For installing the package:
+First install the package devtools if necessary.
+Then:
+```{r}
+devtools::install_github("gdauby/genmap")
+```
+
+
+An example dataset containing coordinates (decimal degrees) and taxa information
+
+```{r}
+library(genmap)
+
+data(data.used)
+
+data.used
+
+```
+
+The function grid_couting_tax is used for partitionning the data into a grid of a given resolution
+
+```{r}
+results <-
+  grid_couting_tax(data = data.used ,long = "lon", lat = "Lat", sp = "ID_Species", resolution = 10)
+
+
+```
+
+
+
+
 
